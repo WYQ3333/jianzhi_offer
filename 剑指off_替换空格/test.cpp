@@ -12,7 +12,9 @@ public:
 		char *stemp = "%20";
 		int temp = 0;
 		while (-1!=(temp=s.find(' '))){
-			s.insert(temp, stemp, 3);
+			s.insert(temp, '%',1);
+			s.insert(temp, '2', 1); 
+			s.insert(temp, '0', 1);
 		}
 	}
 };
