@@ -9,11 +9,12 @@ public:
 		if (s.empty()){
 			return;
 		}
-		char *stemp = "%20";
+		char *stemp1 = "%";
+		char *stemp2 = "2";
 		int temp = 0;
 		while (-1!=(temp=s.find(' '))){
-			s[temp] = '%';
-			s[temp + 1] = '2';
+			s.insert(temp,stemp1);
+			s.insert(temp + 1, stemp2);
 			s[temp + 2] = '0';
 		}
 	}
