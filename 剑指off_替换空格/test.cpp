@@ -17,12 +17,13 @@ public:
 			s.insert(temp + 1, stemp2);
 			s[temp + 2] = '0';
 		}
+		str = (char*)s.c_str();
 	}
 };
 
 int main(){
 	Solution s;
-	char *str = "hello world I love you";
+	char *str = "hello world";
 	s.replaceSpace(str, strlen(str));
 	system("pause");
 	return 0;
